@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <!-- display scores -->
+        <div class="scores-container">
+            <h1>Rock Paper Scissors</h1>
+            <div class="score">
+                <div>
+                    <p>Computer Score</p>
+                    <h1 class="comp-score">0</h1>
+                </div>
+                <div>
+                    <p>Your Score</p>
+                    <h1 class="user-score">0</h1>
+                </div>
+            </div>
+
+
+            <!-- play area containing buttons for rock paper scissor -->
+        </div>
+        <div class="play-area">
+            <div class="box"></div>
+            <div class="play-button">
+                <button id="paper" class="round-btn paper-btn"> <img src="./images/paper.png" alt=""></button>
+
+            </div>
+            <div class="play-button">
+                <button id="rock" class="round-btn rock-btn"> <img src="./images/rock.png" alt=""></button>
+
+            </div>
+            <div class="play-button">
+                <button id="scissor" class="round-btn scissor-btn"> <img src="./images/scissor.png" alt=""></button>
+
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn rules-btn">rules</button>
+            <a href="./hurray.html"><button onclick="clearStorage()" class="btn next-btn">next</button></a>
+
+        </div>
+
+        <!-- Game Rules -->
+        <div class="game-rules">
+            <h1>Game Rules</h1>
+            <ul>
+                <li>
+                    <p>Rock beats scissors, scissors beat paper, and paper beats rock</p>
+                </li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                    scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <button class="close-btn">x</button>
+        </div>
+
+        <!-- Winner area displaying result -->
+        <div class="winner-area">
+            <div class="user">
+                <p>you picked</p>
+                <button class="round-btn-noClick "> <img id="user-img" src="./images/paper.png" alt=""></button>
+
+            </div>
+            <div class="msg-display">
+                <h1 class="msg">You won </h1>
+                <h3>Against pc</h3>
+                <button class="play-again-btn">Play Again</button>
+            </div>
+            <div class="pc">
+                <p>pc picked</p>
+                <button class="round-btn-noClick "> <img id="comp-img" src="./images/paper.png" alt=""></button>
+
+            </div>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
